@@ -1,0 +1,43 @@
+h2{
+    /* este estilo afeta a todos los h2 */
+font-family: 'Courier New', Courier, monospace;
+font-size: 40px; /* declaracion css 1 */
+color: rgb(88, 197, 121); 
+background-color: darkblue;
+
+}
+.textomorado{
+color: blueviolet;
+
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+.clasecontenedorDIV { /* afectara a algunos contenedores div */
+font-size: 30px;
+width: 500px;
+height: 400px;
+background-color: aliceblue;
+
+}
+
+#fondoaleatorio { /*afecta solo a una etiqueta*/
+
+    background-color: rgb(230, 82, 107);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    font-size: 25px;
+
+}
+
+.textomorado:hover {
+
+background-color: darkseagreen;
+color: rosybrown;
+}
+
+.clasecontenedorDIV::first-letter {
+    font-size: 75px;
+    color: crimson;
+    
+
+}
