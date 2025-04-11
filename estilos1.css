@@ -39,5 +39,56 @@ color: rosybrown;
     font-size: 75px;
     color: crimson;
     
+}
+
+.clase_estatic{
+
+    font-size: 20px;
+    background-color: aqua;
+    position: static;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 200px;
 
 }
+
+.clase_estatic2{
+
+    font-size: 20px;
+    background-color: aqua;
+    position: static;
+    top: 20px;              /*no funciona sin margin*/
+    left: 80px;
+    right: 200px;
+
+}
+
+.clase_relative{
+    font-size: 20px;
+    background-color: rgb(133, 218, 171);
+    height: 250px;
+    width: 250px;
+}
+.clase_relative:hover {
+position: relative;
+top: -100px;
+left: 100px;
+
+
+}
+
+.clase_relative2{
+    font-size: 20px;
+    background-color: rgb(243, 155, 234);
+    height: 250px;
+    width: 250px;
+}
+.clase_relative2:hover {
+position: relative;
+margin-top: 100px;
+margin-left: 100px;
+z-index: -5;
+
+}
+
+
