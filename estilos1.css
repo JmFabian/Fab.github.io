@@ -91,4 +91,55 @@ z-index: -5;
 
 }
 
+.ClaseAbsolute{
+    font-size: 20px;
+    background-color: aqua;
+    position: absolute;
+    height: 250px;
+    width: 200px;  
+    bottom: 200px;
+    left: 100px;
+    z-index: -5;  
+}
+
+
+.ClaseAbsoluteRelativa{
+    font-size: 20px;
+    background-color: aqua;
+    position: absolute;
+    height: 250px;
+    width: 200px;
+    bottom: 0px;
+    left: 500px;
+
+
+}
+
+.clase_fixed{
+    height: 500px;
+    width: 410px;
+    position: fixed;
+    left: 500px;
+    bottom: 100px;
+    z-index: -10;
+
+}
+
+.Agua_de_Marca{
+
+opacity: 0.3;
+pointer-events: none;
+z-index: 10;
+
+}
+
+.clase_sticky{
+
+position: sticky;
+font-size: 40px;
+top: 0px;
+left: 40px;
+height: 300px;
+
+}
 
