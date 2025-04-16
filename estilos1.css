@@ -143,3 +143,79 @@ height: 300px;
 
 }
 
+.bloque{
+background-color: rgb(204, 138, 58);
+font-size: 20px;
+margin: 20px;
+color: rgb(152, 167, 114);
+
+
+}
+
+.tipoinlineblock{
+background-color: rgb(248, 56, 56);
+font-size: 30px;
+margin: 10px;
+color: rgb(46, 231, 46);
+display: inline-block;
+width: 500px;
+
+
+}
+
+.enlinea{
+background-color: rgb(116, 116, 253);
+display: inline;
+font-size: 30px;
+margin: 2px;
+color: azure;
+width: 80px;
+height: 40px;
+
+}
+
+.tiponone{
+background-color: rgb(74, 135, 139);
+font-size: 20px;
+margin: 20px;
+color: rgb(46, 231, 46);
+display: none;
+
+
+}
+
+
+.tipohidden{
+background-color: rgb(228, 0, 0);
+font-size: 20px;
+margin: 20px;
+color: rgb(30, 221, 30);
+visibility: hidden;
+
+
+}
+
+.tipoFlex{
+display: flex;
+background-color: rgb(255, 211, 253);
+align-items: center;
+justify-content: space-around;
+
+
+}
+
+.ClaseNav{
+background-color: chartreuse;
+font-size: 32px;
+padding-inline: 2px;
+color: black;
+display: inline;
+list-style-type: none;
+
+}
+
+.ClaseNav a:hover {
+background-color: coral;
+
+}
+
