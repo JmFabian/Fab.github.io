@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos1.css">
+    <script type="text/javascript" src="script1.js">  </script>
     <title>instituto certus</title>
 </head>
 <body style="background-color: rgb(255, 136, 152);"    >
@@ -336,6 +337,52 @@ Y COMMIT PARA CONFIRMAR EL CAMBIO -->
 
 </form>
 
+<div style="font-size: 30px;">contenedor resultado en java script
+    <div id="resultado" style="font-size: 30px;">
+        <p> operacion suma </p>
+    </div>
+
+
+
+
+</div>
+
+<script>
+
+    window.alert("welcome to my page");
+    
+    var valor1=80;
+    var valor2=60;
+    var suma =valor1 +valor2;
+    var multiplicacion =valor1 *valor2;
+    var resta =valor1 -valor2;
+    console.log("el valor de la suma de",valor1,"con",valor2,"es :", suma);
+    console.log("el valor de la multiplicacion de",valor1,"con",valor2,"es :", multiplicacion);
+    console.log("el valor de la resta de",valor1,"con",valor2,"es :", resta);
+document.getElementById('resultado').innerHTML="resultado suma ="+suma;
+document.write("<br><br><br> hola")
+let base = 2;
+let exponente = 3;
+let resultado = base ** exponente; // resultado será 8 (2 * 2 * 2)
+console.log(resultado); // Imprime 8
+
+let otroResultado = 5 ** 2; // 5 al cuadrado (25)
+console.log(otroResultado); // Imprime 25
+
+
+    </script>
+
+<p id="miParrafo">Esto es un párrafo <strong style="display:none;">oculto</strong> y <em>texto en cursiva</em></p>
+
+<section>
+<h1 style="font-size: 32px;"> ejemplo de manipulacion del DOM</h1>
+<p id="EjmDOM1" style="font-size: 25px;"> este es el primerito de texto al aplicarle DOM </p>
+
+
+<button onclick="FCambioColor()"> cambio de color </button>
+
+
+</section>
 
 </body>
 </html>
