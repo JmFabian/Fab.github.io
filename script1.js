@@ -29,8 +29,16 @@ function FCambiodeTag1() {
 
 }
 
-function FUsoFor1()
-{
+function FcrearH1(){
+    var elemento =document.getElementById("idCrearH1");
+    var nuevoH1 =document.createElement("H1");
+    var texto = document.createTextNode("tenga un excelente dia");
+    nuevoH1.appendChild(texto);
+    elemento.appendChild(nuevoH1);
+  
+  }
+
+function FUsoFor1(){
   const vTextoClass = document.getElementsByClassName("classFOR1");
   var vTextoTotal="";
   // como length=4 --> ira desde 0 hasta 3
