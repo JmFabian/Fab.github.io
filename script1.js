@@ -71,7 +71,8 @@ function FEliminarConcat()
   const vTextoClass = document.getElementsByClassName("classFOR1");
   let rpta =prompt("Estas seguro de eliminar el texto concatenado?(S/N)",'');
   if (rpta=="S" || rpta=="s")  //  doble || significa o
-    { vTextoClass[3].remove();  // eliminar la class de posicion [3]
+    { let rpta =prompt("ingrese el numero de fila que quiere eliminar",'');
+       vTextoClass[rpta].remove();  // eliminar la class de posicion [3]
       alert("CONCATENCION ELMINADA");
     }  
   else
@@ -115,6 +116,100 @@ console.log('El valor del nombre es:', valor1);
 
 }
 
+function FValidarCiclo(){
+
+const varciclo =document.getElementsByName("ciclo");
+
+for (let i = 0; i < varciclo.length; i++) {
+  if (varciclo[i].checked==true){
+document.getElementById('observacion').value = varciclo[i].value;
+return;
+
+  }
+  
+}
+
+
+}
+
+function FcreardatosCiclo(){
+
+const radios = document.querySelectorAll('input[name="ciclo"]');
+radios.forEach(function(radio){
+  radio.addEventListener('change',function(event){
+    console.log("ciclo seleccionado:", event.target.value);
+    const cantidad = event.target.value;
+
+    document.getElementById('observacion').value = cantidad;
+  });
 
 
 
+  
+}
+);
+
+
+
+}
+
+function Fcasillas(){
+
+  const cursos = document.querySelectorAll('input[name="cursos"]');
+  cursos.forEach(function(checkbox){
+    checkbox.addEventListener('change',function(event){
+      console.log("curso seleccionado:", event.target.value);
+      const cantidad = event.target.value;
+  
+      document.getElementById('observacion').value = cantidad;
+    });
+  
+  
+  
+    
+  }
+  );
+  
+  
+  
+  }
+  
+///////////hola//////
+
+
+document.addEventListener("DOMContentLoaded",()=>{
+const radios = document.querySelectorAll('input[name="ciclo"]');
+radios.forEach(function(radio){
+  radio.addEventListener('change',function(event){
+    console.log("ciclo seleccionado:", event.target.value);
+    const cantidad = event.target.value;
+
+    document.getElementById('observacion').value = cantidad;
+  });
+
+
+}
+);
+  
+  });
+
+/////////a//////
+  document.addEventListener("DOMContentLoaded", () => {
+    const numCole = document.getElementById("numColegios");
+    document.getElementById("numColegios").addEventListener("input",(event)=> {
+      let content ="";
+      const cantR=event.target.value;
+      const vTexto1 = document.getElementById("ejmDOM1");
+      vTexto1.innerText= cantR;   
+      document.getElementById('observacion').value = cantR;
+      for(let i=0; i<cantR ;i++)
+      {
+        content=content + `<div> <label> Colegio ${i+1} </label>
+                            <input type="text" id="cole[${i}" > </div>`;
+      }
+    document.getElementById("DetalleColegios").innerHTML=content;
+    
+    });
+    });
+  
+  

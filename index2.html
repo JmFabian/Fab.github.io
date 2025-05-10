@@ -282,6 +282,10 @@ Y COMMIT PARA CONFIRMAR EL CAMBIO -->
           <option value="1,61 a 1,70">1,61 a 1,70 mts</option>
           <option value="mas de 1,70">más de 1,70 mts</option>
         </select>
+
+
+        <p style="font-size: 20px;"> <label for="numColegios"> Numero Colegios que estudió: <input type="number" id="numColegios" name="numColegios"  style="font-size: 20px;" min="1" max="12"> </label> </p>
+        <div id="DetalleColegios"> DEtalle Estudios: </div>
       </label></p>
        
         <p><label>Cursos llevados:</label></p>
@@ -434,6 +438,11 @@ console.log(otroResultado); // Imprime 25
     
     </section>
 
+    <button onclick="FValidarCiclo()">enviar ciclo de observacion</button>
+    <br>
+    <button onclick="FcreardatosCiclo()">enviar el ciclo designado</button>
+    <br>
+    <button onclick="Fcasillas()"> casillas boton </button>
 
 </body>
 </html>
